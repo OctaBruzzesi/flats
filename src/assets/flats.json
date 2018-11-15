@@ -1,0 +1,30 @@
+[
+  {
+    "location": "Rosario, Moreno 990",
+    "spaces": 3,
+    "squareMeters": 75,
+    "nightPrice": 500,
+    "monthlyPrice": 3000
+  },
+  {
+    "location": "San Nicolas, Vivaldi 450",
+    "spaces": 4,
+    "squareMeters": 90,
+    "nightPrice": 350,
+    "monthlyPrice": 2500
+  },
+  {
+    "location": "Rosario, Corrientes 1005",
+    "spaces": 3,
+    "squareMeters": 55,
+    "nightPrice": 300,
+    "monthlyPrice": 2900
+  },
+  {
+    "location": "Palermo, Guemes 4020",
+    "spaces": 1,
+    "squareMeters": 50,
+    "nightPrice": 900,
+    "monthlyPrice": 7500
+  }
+]
