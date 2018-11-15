@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "location": "Rosario, Moreno 990",
     "spaces": 3,
     "squareMeters": 75,
@@ -7,6 +8,7 @@
     "monthlyPrice": 3000
   },
   {
+    "id": 2,
     "location": "San Nicolas, Vivaldi 450",
     "spaces": 4,
     "squareMeters": 90,
@@ -14,6 +16,7 @@
     "monthlyPrice": 2500
   },
   {
+    "id": 3,
     "location": "Rosario, Corrientes 1005",
     "spaces": 3,
     "squareMeters": 55,
@@ -21,6 +24,7 @@
     "monthlyPrice": 2900
   },
   {
+    "id": 4,
     "location": "Palermo, Guemes 4020",
     "spaces": 1,
     "squareMeters": 50,

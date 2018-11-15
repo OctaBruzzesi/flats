@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
 import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
+import FlatItem from './FlatItem';
 import flats from '../assets/flats.json';
 
 export default class FlatsLists extends Component {
   renderFlats() {
     return flats.map(flat => (
-        <Text>{flat.location}</Text>
+        <FlatItem key={flat.id} flat={flat} />
       ));
   }
 
   render() {
     return (
       <SafeAreaView style={styles.container}>
+        <View style={{ flex: 1, justifyContent: 'flex-start' }}>
         <View style={styles.titleContainerStyle}>
-          <Text style={styles.titleTextStyle}>Hire Flats!</Text>
+          <Text style={styles.titleTextStyle}>Alquile departamentos!</Text>
         </View>
         <View style={styles.flatsListContainerStyle} >
           {this.renderFlats()}
+        </View>
         </View>
       </SafeAreaView>
     );
@@ -38,6 +41,6 @@ const styles = StyleSheet.create({
   },
   flatsListContainerStyle: {
     flex: 10,
-    marginTop: 250
+    justifyContent: 'flex-start'
   }
 });
