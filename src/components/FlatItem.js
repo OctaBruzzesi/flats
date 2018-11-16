@@ -1,9 +1,10 @@
 import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
+import { withNavigation } from 'react-navigation';
 import Button from './Button';
 
-const FlatItem = ({ flat }) => {
-  const { spaces, location, squareMeters, nightPrice, monthlyPrice } = flat;
+const FlatItem = props => {
+  const { id, spaces, location, squareMeters, nightPrice, monthlyPrice } = props.flat;
   return (
     <View style={styles.containerStyle}>
       <View style={styles.informationContainerStyle}>
@@ -14,8 +15,22 @@ const FlatItem = ({ flat }) => {
         <Text>Precio por mes: ${monthlyPrice}</Text>
       </View>
       <View style={styles.buttonContainerStyle}>
-        <Button onPress={() => {}} label="Alquilar por noche" color="#00A8FF" />
-        <Button onPress={() => {}} label="Alquilar por mes" color="#44BD32" />
+        <Button
+          onPress={() => props.navigation.navigate('Hire', {
+            id,
+            action: 'night'
+          })}
+          label="Alquilar por noche"
+          color="#00A8FF"
+        />
+        <Button
+          onPress={() => props.navigation.navigate('Hire', {
+            id,
+            action: 'month'
+          })}
+          label="Alquilar por mes"
+          color="#44BD32"
+        />
       </View>
     </View>
   );
@@ -42,4 +57,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default FlatItem;
+export default withNavigation(FlatItem);

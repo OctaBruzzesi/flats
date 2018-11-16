@@ -20,7 +20,9 @@ const styles = StyleSheet.create({
 });
 
 Button.propTypes = {
-
+  label: PropTypes.string,
+  onPress: PropTypes.func,
+  color: PropTypes.string
 };
 
 export default Button;

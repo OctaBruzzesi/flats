@@ -32,8 +32,9 @@ const styles = StyleSheet.create({
   },
   titleContainerStyle: {
     alignItems: 'center',
-    backgroundColor: '#8DDD00',
-    height: 90,
+    borderWidth: 1,
+    backgroundColor: 'green',
+    height: 50,
     justifyContent: 'center'
   },
   titleTextStyle: {
